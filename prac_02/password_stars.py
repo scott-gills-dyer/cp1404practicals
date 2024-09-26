@@ -13,7 +13,7 @@ def print_asterisks(password):
 def get_password():
     password = input("Enter a password: ")
     while len(password) < MINIMUM_LENGTH:
-        print("Please enter a password of length 6 or greater")
+        print(f"Please enter a password of length {MINIMUM_LENGTH} or greater")
         password = input("Enter a password: ")
     return password
 
