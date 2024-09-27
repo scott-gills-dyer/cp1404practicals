@@ -22,7 +22,7 @@ def main():
             print("*" * score)
         else:
             print("Invalid choice.")
-            print(MENU)
+        print(MENU)
         choice = input("Please choose an option above: ").upper()
     print("Goodbye Good Friend!")
 
