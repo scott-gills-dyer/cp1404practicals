@@ -17,7 +17,7 @@ def main():
             print(f"Result: {fahrenheit:.2f} F")
         elif choice == "F":
             celsius = convert_fahrenheit_to_celsius()
-            print(f"Result: {celsius:.2f} F")
+            print(f"Result: {celsius:.2f} C")
         else:
             print("Invalid option")
         print(MENU)
