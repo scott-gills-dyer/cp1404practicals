@@ -18,7 +18,7 @@ def main():
         elif choice == "P":
             print(determine_score(score))
         elif choice == "S":
-            pass
+            print("*" * score)
         else:
             print("Invalid choice.")
             print(MENU)
