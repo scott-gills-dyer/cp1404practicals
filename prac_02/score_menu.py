@@ -29,7 +29,7 @@ def main():
 
 def determine_score(score):
     """Determine the status of given score."""
-    if score < 0 or score > 100:
+    if score < MINIMUM or score > MAXIMUM:
         return "Invalid score"
     elif score < 50:
         return "Bad"
