@@ -14,8 +14,8 @@ BONUS_MULTIPLIER_HIGH = 0.15
 sales = float(input("Enter sales: $"))
 while sales >= 0:
     if sales < BONUS_THRESHOLD:
-        commission = sales * BONUS_MULTIPLIER_LOW
+        bonus_amount = sales * BONUS_MULTIPLIER_LOW
     else:
-        commission = sales * BONUS_MULTIPLIER_HIGH
-    print(f"Yous sales commissions for ${sales:.2f} is ${commission:.2f}")
+        bonus_amount = sales * BONUS_MULTIPLIER_HIGH
+    print(f"Yous sales commissions for ${sales:.2f} is ${bonus_amount:.2f}")
     sales = float(input("Enter sales: $"))
