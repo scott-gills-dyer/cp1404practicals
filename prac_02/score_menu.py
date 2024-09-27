@@ -23,6 +23,7 @@ def main():
             print("Invalid choice.")
             print(MENU)
         choice = input("Please choose an option above: ").upper()
+    print("Goodbye Good Friend!")
 
 
 def determine_score(score):
