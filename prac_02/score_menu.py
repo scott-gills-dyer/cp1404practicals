@@ -7,7 +7,9 @@ MENU = "(G)et a valid score \n(P)rint result \n(S)how stars \n(Q)uit"
 MINIMUM = 0
 MAXIMUM = 100
 
+
 def main():
+    score = get_valid_score()
     print(MENU)
     choice = input("Please select an option above: ").upper()
     while choice != "Q":
@@ -20,7 +22,7 @@ def main():
         else:
             print("Invalid choice.")
             print(MENU)
-            choice = input("Please choose an option above: ").upper()
+        choice = input("Please choose an option above: ").upper()
 
 
 def get_valid_score():
