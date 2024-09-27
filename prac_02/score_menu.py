@@ -16,13 +16,24 @@ def main():
         if choice == "G":
             score = get_valid_score()
         elif choice == "P":
-            pass
+            print(determine_score(score))
         elif choice == "S":
             pass
         else:
             print("Invalid choice.")
             print(MENU)
         choice = input("Please choose an option above: ").upper()
+
+
+def determine_score(score):
+    """Determine the status of given score."""
+    if score < 0 or score > 100:
+        return "Invalid score"
+    elif score < 50:
+        return "Bad"
+    elif score < 90:
+        return "Passable"
+    return "Excellent"
 
 
 def get_valid_score():
