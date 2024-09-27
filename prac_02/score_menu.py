@@ -9,6 +9,7 @@ MAXIMUM = 100
 
 
 def main():
+    """Program display score status and stars after getting a score."""
     score = get_valid_score()
     print(MENU)
     choice = input("Please select an option above: ").upper()
@@ -38,6 +39,7 @@ def determine_score(score):
 
 
 def get_valid_score():
+    """Get a valid score."""
     valid_score = int(input("Please enter your score: "))
     while valid_score < MINIMUM or valid_score > MAXIMUM:
         print("Invalid score")
