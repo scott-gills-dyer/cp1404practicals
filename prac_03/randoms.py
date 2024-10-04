@@ -9,6 +9,8 @@ print(random.randrange(3, 10, 2))
 print(random.uniform(2.5, 5.5))
 """
 
+import random
+
 # What did you see on line 1?
 # 10
 # Smallest number is 5, largest is 10
@@ -21,3 +23,5 @@ print(random.uniform(2.5, 5.5))
 # What did you see on line 3?
 # 4.953468171396857
 # Smallest number is 2.5, 5.5
+
+print(random.randint(1, 100))
