@@ -10,6 +10,7 @@ def main():
     subjects = load_data()
     display_subjects(subjects)
 
+
 def load_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
     subjects = []

@@ -15,6 +15,7 @@ def main():
 
     display_report(incomes)
 
+
 def display_report(incomes):
     """Display income report for incomes over a given number of months."""
     print("\nIncome Report\n-------------")
