@@ -8,8 +8,7 @@ FILENAME = "subject_data.txt"
 
 def main():
     subjects = load_data()
-    print(subjects)
-
+    display_subjects(subjects)
 
 def load_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
@@ -26,6 +25,12 @@ def load_data():
         subjects.append(parts)
     input_file.close()
     return subjects
+
+
+def display_subjects(subjects):
+    """Displays formatted subjects."""
+    for subject in subjects:
+        print(f"{subject[0]} is taught by {subject[1]:12} and has {subject[2]:3} students")
 
 
 main()
