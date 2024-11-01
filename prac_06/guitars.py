@@ -1,7 +1,15 @@
+"""
+CP1404
+
+Estimate: 15 minutes
+Actual:   25 minutes
+"""
+
 from guitar import Guitar
 
 
 def main():
+    """Program that gets guitar information, appends a list and prints the formatted list."""
     guitars = []
     name = input("Enter a guitar name: ")
     while name != "":

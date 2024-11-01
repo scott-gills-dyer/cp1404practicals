@@ -1,7 +1,14 @@
+"""
+CP1404
+Estimate: 5 minutes
+Actual:   5 minutes
+"""
+
 from guitar import Guitar
 
 
 def run_test():
+    """Program to test guitar class methods."""
     name = "Gibson L-5 CES"
     year = 1922
     cost = 16035.40
