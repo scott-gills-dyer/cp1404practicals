@@ -9,6 +9,7 @@ Actual: 20 mins
 
 class ProgrammingLanguage:
     """Programming Language class, has name, typing, reflection, year"""
+
     def __init__(self, name, typing, reflection, year):
         """Initialise a language instance"""
         self.name = name
