@@ -4,7 +4,6 @@ CP1404 Practical
 Estimate: 4 hours
 Actual: 5 Hours
 """
-from datetime import datetime
 
 class Project:
     """Project class that has name, start_date, priority, cost_estimate, completion_percentage."""
