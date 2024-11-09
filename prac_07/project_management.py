@@ -19,24 +19,48 @@ def main():
     while choice != "Q":
         if choice == "L":
             load_project(projects)
-            pass
+            print(f"Loaded {len(projects)} from projects.txt")
         elif choice == "S":
             pass
         elif choice == "D":
-            for project in projects:
-                print(project)
+            if projects:
+                display_incomplete_projects(projects)
+                display_complete_projects(projects)
+            else:
+                print("There are no projects loaded")
         elif choice == "F":
             pass
-        elif choice == "U":
-            pass
         elif choice == "A":
-            pass
+            name = input("Enter the project name: ").title()
+            start_date = input("Start date (dd/mm/yy): ")
+            priority = int(input("Priority: "))
+            cost_estimate = float(input("Cost estimate: "))
+            completion_percentage = float(input("Percent complete: "))
+            projects.append(Project(name, start_date, priority, cost_estimate, completion_percentage))
         elif choice == "U":
-            pass
+            for i, project in enumerate(projects):
+                print(i, project)
         else:
             print("Invalid choice")
             print(MENU)
+        print(MENU)
         choice = input("Enter your choice: ").upper()
+
+
+def display_complete_projects(projects):
+    """"""
+    print("completed projects")
+    for project in projects:
+        if project.is_complete():
+            print(project)
+
+
+def display_incomplete_projects(projects):
+    """"""
+    print("Incomplete projects")
+    for project in projects:
+        if not project.is_complete():
+            print(project)
 
 
 def load_project(projects):
