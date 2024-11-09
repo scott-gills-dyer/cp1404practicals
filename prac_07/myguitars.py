@@ -9,6 +9,7 @@ FILENAME = "guitars.csv"
 
 
 def main():
+    """Project that reads from file, adds to list to and prints guitars."""
     guitars = []
     read_file(FILENAME, guitars)
     guitars.sort()
@@ -17,6 +18,7 @@ def main():
 
 
 def read_file(filename, guitars):
+    """Read guitars from a CSV file."""
     with open(filename, "r", encoding="utf-8-sig") as in_file:
         for line in in_file:
             parts = line.strip().split(',')
