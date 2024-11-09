@@ -14,5 +14,5 @@ I learned clean code to ensure:
 - Improve the maintainability of my code.
 - Avoid redundancy and repetition in my code.
 
-[Programming Patterns page](https://github.com/CP1404/Starter/wiki)
+[Programming Patterns page](https://github.com/CP1404/Starter/wiki)  
 [CP1404 Practicals instructions repo](https://github.com/CP1404/Practicals)
