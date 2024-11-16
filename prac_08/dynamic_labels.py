@@ -1,17 +1,22 @@
+"""
+CP1404 Practical
+Kivy GUI program for dynamic labels.
+
+"""
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.label import Label
 
 class DynamicLabels(App):
-    """"""
+    """Kivy App for showcasing dynamic labels."""
 
     def __init__(self, **kwargs):
-        """"""
+        """Initialises dynamic labels instance with the keyword argument names."""
         super(DynamicLabels, self).__init__(**kwargs)
         self.names = ["John", "Lindsay", "Carl", "Steve", "James", "Snoop Dog"]
 
     def build(self):
-        """"""
+        """Builds the Kivy App from the kv file."""
         self.title = "Dynamic Labels"
         self.root = Builder.load_file('dynamic_labels.kv')
         self.create_labels()
