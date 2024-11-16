@@ -1,3 +1,8 @@
+"""
+CP1404 Practical
+Kivy GUI program to convert kilometers to miles.
+
+"""
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.properties import StringProperty
