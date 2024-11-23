@@ -11,14 +11,22 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 def main():
     total_bill = 0
-    taxis = []
+    taxis = [Taxi('Prius', 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer" , 200, 4)]
     current_taxi = None
     print("Let's drive!")
     print(MENU)
     choice = input("Choose a menu option: ").lower()
     while choice != "q":
         if choice == "c":
-            pass
+            print("Taxis available")
+            for i, taxi in enumerate(taxis):
+                print(f"{i} - {taxi}")
+            taxi_choice = int(input("Choose a taxi: "))
+            try:
+                current_taxi = taxis[taxi_choice]
+            except IndexError:
+                print("Invalid taxi")
+
         elif choice == "d":
             if current_taxi:
                 pass
