@@ -40,11 +40,15 @@ def main():
         else:
             print("invalid option.")
         print(f"Bill to date: ${total_bill:.2f}")
+        print(MENU)
         choice = input("Choose a menu option: ").lower()
-    print("Thank you, goodbye!")
+    print(f"Total trip cost: ${total_bill:.2f}")
+    print("Taxis are now:")
+    display_taxi(taxis)
 
 
 def display_taxi(taxis):
+    """"""
     for i, taxi in enumerate(taxis):
         print(f"{i} - {taxi}")
 
