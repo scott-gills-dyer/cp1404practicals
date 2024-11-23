@@ -1,11 +1,11 @@
 """
-
+CP1404/CP5632 Practical - Silver service taxi test.
 """
 from prac_09.silver_service_taxi import SilverServiceTaxi
 
 
 def main():
-    """"""
+    """Program to test Silver Service Taxi class."""
     taxi = SilverServiceTaxi('Lux Taxi', 100, 1.5)
     taxi.drive(50)
     print(taxi)
