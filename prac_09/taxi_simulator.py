@@ -20,8 +20,7 @@ def main():
     while choice != "q":
         if choice == "c":
             print("Taxis available")
-            for i, taxi in enumerate(taxis):
-                print(f"{i} - {taxi}")
+            display_taxi(taxis)
             taxi_choice = int(input("Choose a taxi: "))
             try:
                 current_taxi = taxis[taxi_choice]
@@ -43,6 +42,11 @@ def main():
         print(f"Bill to date: ${total_bill:.2f}")
         choice = input("Choose a menu option: ").lower()
     print("Thank you, goodbye!")
+
+
+def display_taxi(taxis):
+    for i, taxi in enumerate(taxis):
+        print(f"{i} - {taxi}")
 
 
 main()
