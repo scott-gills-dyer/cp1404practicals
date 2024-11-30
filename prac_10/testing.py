@@ -32,7 +32,7 @@ def run_tests():
     # the test below should fail
     assert repeat_string("hi", 2) == "hi hi"
 
-    # TODO: 1. fix the repeat_string function above so that it passes the failing test
+    # 1. fix the repeat_string function above so that it passes the failing test
     # Hint: "-".join(["yo", "yo"] -> "yo-yo"
 
     # assert test with custom message,
@@ -41,7 +41,7 @@ def run_tests():
     car = Car()
     assert car._odometer == 0, "Car does not set odometer correctly"
 
-    # TODO: 2. write assert statements to show if Car sets the fuel correctly
+    # 2. write assert statements to show if Car sets the fuel correctly
     # Note that Car's __init__ function sets the fuel in one of two ways:
     # using the value passed in or the default
     # You should test both of these
@@ -53,14 +53,15 @@ def run_tests():
 
 run_tests()
 
-# TODO: 3. Uncomment the following line and run the doctests
+# 3. Uncomment the following line and run the doctests
 # (PyCharm may see your >>> doctest comments and run doctests anyway.)
 doctest.testmod()
 
-# TODO: 4. Fix the failing is_long_word function
+
+# 4. Fix the failing is_long_word function
 # (Don't change the tests, change the function!)
 
-# TODO: 5. Write and test a function to format a phrase as a sentence,
+# 5. Write and test a function to format a phrase as a sentence,
 # starting with a capital and ending with a single full stop.
 # Important: start with a function header and just use pass as the body
 # then add doctests for 3 tests:
@@ -69,12 +70,17 @@ doctest.testmod()
 # and one more that you decide is a useful test.
 # Run your doctests and watch the tests fail.
 # Then write the body of the function so that the tests pass.
-def is_string_formatted(string):
+def phrase_to_sentence(phrase):
     """
-    Determine if string is formatted
-    >>> is_string_formatted
-    True
-    >>> is_string_formatted
-    # True
-    # """
-    return f"{string.title}"
+    Determine if phrase is formatted
+    >>> phrase_to_sentence('hello')
+    'Hello.'
+    >>> phrase_to_sentence('it is an ex parrot')
+    'It is an ex parrot.'
+    >>> phrase_to_sentence('hello, goodbye. goodbye, hello')
+    'Hello, goodbye. goodbye, hello.'
+    """
+    sentence = phrase.capitalize()
+    if not sentence.endswith("."):
+        sentence = f"{sentence}."
+    return sentence
